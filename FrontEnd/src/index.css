@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  
+  ::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-lg;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600; 
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+}
+
+@layer base {
+  body {
+    @apply overflow-x-hidden; 
+  }
+}
